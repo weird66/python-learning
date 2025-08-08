@@ -8,9 +8,7 @@ def randomWord():
     
     return letter
 
-
-def main():
-    # 这里写主要的程序逻辑
+def guessGame():
     word = randomWord()
     blanks = blanks = word.__len__() * '_'
     lives = 5
@@ -35,8 +33,9 @@ def main():
         if lives <= 0:
             print('you lose, word is:', word)
             break
-
-
+def main():
+    # 这里写主要的程序逻辑
+    guessGame()
 
 if __name__ == "__main__":
     main()
