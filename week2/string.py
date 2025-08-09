@@ -1,9 +1,9 @@
 import string
 
 class StringManipulator:
-    def __init__(self, text: str):
-        self.text = text
-
+    def set_init_value(self, word):
+        self.text = word
+    
     def find_character(self, char):
         return self.text.find(char)
     
@@ -20,7 +20,8 @@ class StringManipulator:
 
 
 def main():
-    text = StringManipulator('aBc')
+    text = StringManipulator()
+    text.set_init_value('Hello World')
     print(text.find_character('b'))
     print(text.find_character('B'))
     print(text.length())
