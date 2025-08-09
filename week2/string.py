@@ -2,6 +2,8 @@ import string
 
 class StringManipulator:
     text: str = ''
+
+    # __init__ is a better way to initialize attrs in the instance of class
     def set_init_value(self, word: str):
         self.text = word
     
