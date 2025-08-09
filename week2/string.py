@@ -11,10 +11,12 @@ class StringManipulator:
         return len(self.text)
     
     def upper_case(self):
-        return StringManipulator(self.text.upper())
+        self.text = self.text.upper()
+        return self
     
     def lower_case(self):
-        return StringManipulator(self.text.lower())
+        self.text = self.text.lower()
+        return self
 
 
 def main():
