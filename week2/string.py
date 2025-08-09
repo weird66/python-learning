@@ -1,7 +1,7 @@
 import string
 
 class StringManipulator:
-    def __init__(self, text):
+    def __init__(self, text: str):
         self.text = text
 
     def find_character(self, char):
