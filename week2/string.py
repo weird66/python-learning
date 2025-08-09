@@ -1,6 +1,7 @@
 import string
 
 class StringManipulator:
+    text = ''
     def set_init_value(self, word):
         self.text = word
     
@@ -22,7 +23,7 @@ class StringManipulator:
 def main():
     text = StringManipulator()
     text.set_init_value('Hello World')
-    print(text.find_character('b'))
+    print(text.find_character('l'))
     print(text.find_character('B'))
     print(text.length())
     print(text.upper_case().text)
