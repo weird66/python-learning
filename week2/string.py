@@ -1,8 +1,8 @@
 import string
 
 class StringManipulator:
-    text = ''
-    def set_init_value(self, word):
+    text: str = ''
+    def set_init_value(self, word: str):
         self.text = word
     
     def find_character(self, char):
