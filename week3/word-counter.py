@@ -36,7 +36,7 @@ class FileOperator:
 
 
 def main():
-    file_path = '/Users/zw/Documents/GitHub/python-learning/week3/demo.txt'
+    file_path = 'week3/demo.txt'
     file_op = FileOperator(file_path)
 
     # 1. Read and display the content of demo.txt
