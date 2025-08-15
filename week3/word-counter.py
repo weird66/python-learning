@@ -18,7 +18,6 @@ class FileOperator:
                 for line in lines:
                     count += words_of_line(line)
                 print('words of the file:', count)
-                f.close()
         except FileNotFoundError:
             print(f"Error: The file '{self.file_path}' was not found.")
         except Exception as e:
