@@ -1,7 +1,7 @@
 import os
 
 def words_of_line(line: str):
-    words_count = line.strip().split(' ')
+    words_count = line.strip().split()
     return words_count.__len__()
 
 class FileOperator:
